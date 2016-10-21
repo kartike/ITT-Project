@@ -6,15 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-
         <title>About - The Novelist</title>
-
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-
         <!-- Custom CSS -->
         <link href="css/business-casual.css" rel="stylesheet">
-
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
@@ -89,12 +85,12 @@
                     font-size: 150px;
                 }
             }
-            </style>
+        </style>
     </head>
 
     <body id="myPage" data-spy="scroll">
         <div class="brand">The Novelist</div>
-        <div class="address-bar">ICT Department | Manipal Institute of Technology|<3 </div>
+        <div class="address-bar">ICT Department | Manipal Institute of Technology</div>
 
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
@@ -162,13 +158,16 @@
                         <hr>
                     </div>
 
-                    <div class="col-sm-4 text-center slideanim">
-                        <img class="img-responsive img-circle" src="img/hri.jpg" alt="" width="280" height="230">
-                        <h3>Hrithrisha Majumder
-                        </h3>
+                    <div class="col-sm-4 text-center slideanim">    
+                        <a href="https://github.com/hrithrisha-majumder/" target="_blank">
+                            <img class="img-responsive img-center img-circle" src="img/hri.jpg" alt="" width="280" height="230">
+                        </a>
+                        <h3>Hrithrisha Majumder</h3>
                     </div>
-                    <div class="col-sm-4 text-center slideanim">
-                        <img class="img-responsive img-circle" src="img/kar.jpg" alt="" width="280" height="230">
+                    <div class="col-sm-4 text-center slideanim">    
+                        <a href="https://github.com/kartike/" target="_blank">
+                            <img class="img-responsive img-center img-circle" src="img/kar.jpg" alt="" width="280" height="230">
+                        </a>
                         <h3>Kartike Sachdeva</h3>
                     </div>
 
@@ -183,7 +182,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <p> MADE WITH <span class="glyphicon">&#xe005;</span> BY H&K
+                        <p> MADE WITH <span class="glyphicon" style="color:#0000DD">&#xe005;</span> BY H&K
                         </p>
                     </div>
                 </div>
@@ -191,42 +190,45 @@
         </footer>
 
         <script src="js/jquery.js"></script>
+        
         <script src="js/bootstrap.min.js"></script>
-            <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+        
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links in navbar + footer link
+              $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+                  // Store hash
+                  var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 900, function(){
 
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+
+              $(window).scroll(function() {
+                $(".slideanim").each(function(){
+                  var pos = $(this).offset().top;
+
+                  var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                      $(this).addClass("slide");
+                    }
+                });
+              });
+            })
+        </script>
     </body>
+
 </html>
